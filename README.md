@@ -14,11 +14,11 @@
 
 # Инсталација
 Симнете го проектот на вашиот компјутер со следната команда
-
+```sh
 git clone git@github.com:anaivanovska/personal_information_manager.git
+```
 
 # Извршување
 Апликацијата се отвора во прелистувач преку пристапување на
 * ../personal_information_manager/html/logIn.html за отворање на страната за најавување
 * ../personal_information_manager/html/home.html за отворање на почетната страна
-
