@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="icon" href="../img/multitask.png">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/personal_information_manager.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        html {
+            height:100%;
+        }
+        .green-border {
+            border: 2px solid #40c29d;
+        }
+
+    </style>
+</head>
+<body class="green-gradient roboto-font-family">
+<div class="d-flex justify-content-center mt-5 py-5">
+    <div class="col-sm-4 green-border text-white py-2">
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label>
+                        First name
+                    </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>
+                        Last name
+                    </label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    E-mail
+                </label>
+                <input type="email" class="form-control"/>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label>
+                        Phone number
+                    </label>
+                    <input type="number" class="form-control"/>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>
+                        Gender
+                    </label>
+                    <select class="form-control">
+                        <option value="custom" selected>Custom</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label>
+                        Password
+                    </label>
+                    <input type="password" class="form-control"/>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>
+                        Confirm password
+                    </label>
+                    <input type="password" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-outline-light btn-block">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="icon" href="../img/multitask.png">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/personal_information_manager.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        html {
+            height:100%;
+        }
+        .green-border {
+            border: 2px solid #40c29d;
+        }
+
+    </style>
+</head>
+<body class="green-gradient roboto-font-family">
+<div class="d-flex justify-content-center mt-5 py-5">
+    <div class="col-sm-4 green-border text-white py-2">
+        <form>
+            <div class="form-group">
+                <label>
+                    <i class="fa fa-user"></i>
+                    Username
+                </label>
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label>
+                    <i class="fa fa-lock"></i>
+                    Password
+                </label>
+                <input type="password" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-light btn-block">Log in</button>
+            </div>
+            <div class="form-group">
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-light col-sm-6" onclick="location.href='signup.html'">Sign up</button>
+                    <a class="col-sm-6 align-self-center" onclick="location.href='forgotPassword.html'">Forgot password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <link rel="icon" href="../img/multitask.png">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../fonts/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../css/personal_information_manager.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .bg-dark {
+            background: no-repeat;
+            background-image: linear-gradient( black ,  #008060); !important;
+        }
+        .text-green {
+            color:#00b690 !important;
+        }
+
+        .card {
+            border: none; !important;
+        }
+
+        .card:hover {
+            background-color: #3d9470;
+            opacity: 0.6;
+            color: white;
+        }
+
+    </style>
+</head>
+<body class="roboto-font-family">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container d-flex justify-content-between">
+        <div >
+            <a class="navbar-brand font-weight-bold" href="../home.html">
+                <img class="img-fluid img-sm" src="../../img/multitask.png">
+                PIM</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="ml-16">
+            <input type="text" class="form-control" placeholder="Search ..."/>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fa fa-home"></i>
+                        Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i> Settings
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSettings">
+                        <a class="dropdown-item" href="statistics.html">Statistics</a>
+                        <a class="dropdown-item" href="changePassword.html">Change password</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../logIn.html">
+                        <i class="fa fa-power-off"></i> Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="container mt-5 py-5">
+    <div class="row justify-content-between">
+        <div class="col-sm-4" onclick="location.href='vacationImages.html'">
+            <div class="card">
+                <div class="card-body text-center   ">
+                    <h5 class="card-title"> <i class="fa fa-sun-o"></i> Vacation</h5>
+                    <i class="fa fa-folder-open fa-5x text-green"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body text-center   ">
+                    <h5 class="card-title"> <i class="fa fa-birthday-cake"></i> Birthday 2018</h5>
+                    <i class="fa fa-folder-open fa-5x text-green"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body text-center" data-toggle="modal" data-target="#newFolder">
+                    <h5 class="card-title"> Add</h5>
+                    <i class="fa fa-plus-square fa-5x text-green"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal add folder document -->
+    <div id="newFolder" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add new folder</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-gradient fixed-bottom py-4">
+    <div class="container text-white text-center">
+        FINKI 2019
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
