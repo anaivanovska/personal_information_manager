@@ -14,6 +14,7 @@
 
 # Инсталација
 Симнете го проектот на вашиот компјутер со следната команда
+
 git clone git@github.com:anaivanovska/personal_information_manager.git
 
 # Извршување
